@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { COURSES } from 'src/db-data';
+import { Course } from '../model/course';
 
 @Component({
   selector: 'course-card',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./course-card.component.css']
 })
 export class CourseCardComponent {
+
+  @Input()
+  course:Course;
+
+  constructor() {}
+  ngOnInit() {}
 
 }
